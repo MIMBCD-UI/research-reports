@@ -157,8 +157,6 @@ For this phase we have prepared a script test that will help us understanding th
 
 \section{Interactive Design}
 
-- How many users we need?
-
 When working on the research and development of a new user interface, we need to iterate with several test sessions to check our development choices. Each of this sessions consist in testing the user with 3 individual clinic testers (until this date). What we have experienced is that we do not actually need a huge set of people, like 10 testers, to identify an issue. With 3 tests, we can already see what are recurring problems with almost a 75\% of usability problems found, which corroborates Nielsen’s graph \cite{needTest} (Figure 2).
 
 % Commands to include a figure:
@@ -194,6 +192,51 @@ The learning goals are:
 
 - Does it make sense to mix from Interviews and Surveys?
 
+\section{Questions}
+
+The following questions were made to the clinicians:
+
+- Ask the question about having the BIRAD in each diagnosis image?
+
+- Is it better on the High-Fi Prototype to have the right-click with all option, just the right menu with the options or both?
+
+- Is it useful to have the colours annotation option?
+
+\section{Tasks Analysis}
+
+Task Analysis is the name given in this report to any process that identifies and examines the tasks that must be performed by users when they interact with systems. It is a fundamental approach which assists in achieving higher safety, productivity and availability standards. This section describes the task analysis approach, and gathers together and comprehensively describes the application of some major task analysis techniques, organizing them into a practical scripts. The scripts are aimed at clinical practitioners such as Clinics, Radiologists, Doctors, etc., with or without previous task analysis experience, who have a need to establish task requirements or to carry out task assessments for one or more of the following topics:
+
+\ding{226} Allocation of function (between human and machine);
+
+\ding{226} Person specification;
+
+\ding{226} Task and user interface design;
+
+\ding{226} Human reliability assessment;
+
+\ding{226} Performance checking;
+
+\ding{226} Problem searching;
+
+Guidance is provided on which techniques to use to achieve human-system performance goals (e.g. efficient and effective allocation of function) in the most cost-effective manner. Application of this section will therefore assist organizations in choosing and applying the most appropriate technique(s) to meet their particular needs. Examples from some of these topic areas of when and where Task Analysis could usefully be applied are the following:
+
+\ding{226} Where it is necessary to provide assurance that task allocation and feasibility are appropriate?
+
+\ding{226} When operational feedback raises concerns over a particular human-machine
+interface?
+
+\ding{226} When the requirements for productivity have changed?
+
+\ding{226} Where personnel characteristics are different?
+
+\ding{226} Where a significantly different technology is being used?
+
+\ding{226} Where the same task has to be performed in a different environment?
+
+\ding{226} How to detect false positives?
+
+This section to Task Analysis shows how and when various task analysis techniques can be used to address the above issues, and also gives practical insights into the use of these techniques. Additionally, it assists in planning task analysis applications during the life cycle of a system, at any stage from early design onwards, to achieve cost-effective results. Finally, a number of real case studies demonstrate how task analysis has actually been used in practice, and the impact that task analysis has had in these clinical applications.
+
 \section{The Script}
 
 Before the users test, the research writes a script that will serve as a roadmap and guideline that can be shared with all research team who lead this project. It is a way to have consistent and comparable results.
@@ -212,54 +255,46 @@ On this research phase we will strict the interaction with the user as a beginni
 
 \clearpage
 
-\section{The Meeting}
+\section{The Meetings}
+
+\subsection{SAMS Hospital}
 
 The meeting was held at 5:00 pm on February 23, 2017 at SAMS Hospital in Lisbon. Its purpose was to draw some conclusions from important tasks, usability and even functionalities (eg ask if BIRAD will make sense for each image).
 
-The conversation began with the doctor informing me that I had bought a new book on tomography and that this would help in the problem domain, as well as helping our Professor Daniel Simões Lopes in his research work. Here we can realize that in fact Doutoura Cristina is motivated to help this and other scientific works. The book integrates mammography and ultrasound with tomosynthesis. Then there are mammograms and sonographies as examples where later both are compared with the own tomosintese, being this the first book that leaves on tomosintese.
+The conversation began with the doctor informing me that I had bought a new book on tomography and that this would help in the problem domain, as well as helping our Professor Daniel Sim\~{o}es Lopes in his research work. Here we can realize that in fact Doctor Cristina is motivated to help this and other scientific works. The book integrates mammography and ultrasound with tomosynthesis. Then there are mammograms and sonographies as examples where later both are compared with the own tomosintese, being this the first book that leaves on tomosintese.
 
 The question was promptly asked about the functionality of BIRAD in all diganostic images, to which the author clearly said that it does not make any sense and that the solution will be to dispose of this functionality at the end of the diagnosis as a whole. This is because in case we are analyzing a craniocaudal we need to have a half-oblique to be able to classify the set of incidences.
 
-TODO: Description of Hardware and Software used ...
-
 After this first dialog we then proceed to the user tests, starting with the first High-Fi Prototype following the scripts described in the previous section. She was then asked by the doctor to pass the lapis over the breast making a circumferential loading from the right side of the mouse to demonstrate what actions the interface offers to manipulate the image. It was immediately warned that the interface was at a very primitive stage so that there is no disinterest about the prototype. We start then as if from zero the user tests to the interface. Initially the doctor had difficulty understanding the interaction mechanisms of the 2011 MacBook Air.
+
+\clearpage
 
 The first task was to make a note of the mass that was in the breast. The doctor did not understand at first how she began to scratch in the image the circumference derived from not being accustomed to tinkering with MacBooks and macOS system. You were instructed to press the MacBook mouse as an informational note to aid in learning while using your MacBook. Here the doctor understands how the menu options that appear when clicking on the right side appear. The first thing the doctor asked was the advantage of having multiple colors. And it began by trying to understand what each of the functions does, having arrived correctly at the solution and giving the right answers. In the beginning the doctor went to get a "Black Pen" but only later realized the need to have to load on the left side of the mouse to draw the lines. After that I had a failed attempt to use the "Paint" program as an example to try to exemplify the interaction, but later seeing the difficulties that the doctor was experiencing when using the macbook told him that to draw would have to keep pressing with the left side. Then the doctor understood the mechanics of the system and learned that pressing and dragging the finger will then draw the circle. However he did not realize that by default a selected color already comes and can start scratching right away. This way the first thing you did for the task was to load with the right side of the mouse and select the black color. Even so, I had to be the one to exemplify it. After this I can do it without any problem and had a very quick learning of how the interface works. The doctor's accuracy was not at all the best, but this is derived from never having used these hardware. Soon after was asked to do "Undo" so the doctor in seconds accomplish the task almost immediately. Then he was asked to do "Redo", "Erase" and "Text Annotation". In relation to the "Erase" functionality, the doctor was informed that the line manipulation symbol ("hand") will have to appear in order to activate the option to eliminate the line. This task was quickly acquired.
 
-In relation to the general opinion of the doctor, she found the interface easy to learn and very intuitive. After this, it was asked if he prefers to have the functionality of the image manipulation options loaded with the right side of the mouse or if he prefers to have a sidebar with the same always visivies. The answer was to have the sidebar in order to better show what options we have. This is because there are more clicks, it is more annoying for the user completely covering the overall image of the image on the diagnostic image, being nothing practical.
+In relation to the general opinion of the doctor, she found the interface easy to learn and very intuitive. After this, it was asked if he prefers to have the functionality of the image manipulation options loaded with the right side of the mouse or if he prefers to have a sidebar with the same always visible. The answer was to have the sidebar in order to better show what options we have. This is because there are more clicks, it is more annoying for the user completely covering the overall image of the image on the diagnostic image, being nothing practical.
 
-The doctor took the opportunity to ask why she had so many colors of "pen" and realized immediately that it was for the reason of having several lesions, such as, Multicentric, where we have several foci of the same quandrante; Multifocal, multiple outbreaks in more than one quandrant; And finally, Unifocal, a quadrant, an injury. The doctor has done an exaggeration of "pens" and advised to only use 3 "pens". It then suggests removing the black "pen".
+\clearpage
+
+The doctor took the opportunity to ask why she had so many colors of "pen" and realized immediately that it was for the reason of having several lesions, such as, Multicentric, where we have several foci of the same quadrant; Multifocal, multiple outbreaks in more than one quadrant; And finally, Unifocal, a quadrant, an injury. The doctor has done an exaggeration of "pens" and advised to only use 3 "pens". It then suggests removing the black "pen".
 
 Again the doctor argued the usability of the interface saying that it was quite fun to manipulate the image. Which shows motivation in doing so.
 All this comes from having annotations with various colors which allows a variety of annotation in the images.
 
 Finally the doctor asked that more features would be placed by what were explained the ones that were in the right menu and some more.
 
-\section{Paper}
+\subsection{S\~{a}o Jos\'{e} Hospital}
 
-\subsection{Motivation}
+On February 24, 2017 (Friday) I went to the S\~{a}o Jos\'{e} in Lisbon at 09:50 for a meeting with Doctor Jo\~{a}o Louren\c{c}o at 10:00 in the morning as agreed by e-mail.
 
-\subsection{Solving A Problem}
+When I arrived at the Hospital, I encountered an organizational problem, because it was difficult for the information about my arrival to be properly communicated to the Doctor, and I had to send an SMS later to the doctor. In the answer to the SMS, the Doctor said to meet in the meeting room of Radiology so I immediately asked in the reception of the same area where this room was. They gave me the incomplete information so I had to ask another person in the hall. Arriving at the Doctor already with a delay of 15min due to all this, he asked me to sit down and had the remaining 45min to deal with a problem on the phone.
 
-\subsection{The Paper Solution}
+I took advantage of this waiting time by using it to understand the surrounding environment where the doctor works. In this case, there was a large room with a meeting table in the middle and against the wall there were 6 monitors radiological diagnosis. The material seemed good and in good conditions, unlike the Hospital's infrastructure. I remember the monitors being Philips.
 
-\subsection{Where To Publish The Paper?}
+\clearpage
 
-\subsection{Clinical Conferences and Journals Research}
+At approximately 11:00, I then began to approach and get to know the doctor as a future user of our interface, as well as the future collaborator of the project. Dr. Jo\~{a}o Louren\c{c}o \cite{joaoLourenco} specializes in Radiology and currently works at both Hospital S\~{a}o Jos\'{e} and CUF Clinic in Bel\'{e}m and Hospital CUF in Torres Vedras. Essentially, and in an area of ​​interest as a user, it uses a lot of RIS software to obtain patient information and PACS, in this case the Philips eSight program, for the radiologic diagnosis. The features you use most are annotations written on the image and change the various views (windows) of the screen. It also uses the functionality of "Reformations" that will have to be later analyzed by us, the researchers.
 
-\section{Tasks}
-
-- Find the ways how to detect false positives.
-
-\section{Questions}
-
-The following questions were made to the clinicians:
-
-- Ask the question about having the BIRAD in each diagnosis image?
-
-- Is it better on the High-Fi Prototype to have the right-click with all option, just the right menu with the options or both?
-
-- Is it useful to have the colours annotation option?
+In explaining the subject was somewhat reluctant to the fact that the project in its interpretation does not bring any sense of scientific innovation. So I explained that a new form of diagnosis would be implemented with a machine-readable approach to clinicians. It was mentioned in the possible existence of two types of software already on the market, Computer-Aided Detection (CADe) and Computer-Aided Diagnosis (CADx) \cite{computerAidedDiagnosis}. The former has an integrated implementation with machine learning so we have to keep this in mind in the future.
 
 \clearpage
 
@@ -271,7 +306,7 @@ The following questions were made to the clinicians:
 
 This report will help our research project in cooperation between ISR \cite{isr} and INESC-ID \cite{inescid} both are associate institutes of Instituto Superior T\'{e}cnico \cite{ist}, Universidade de Lisboa \cite{ul}. Throughout this challenging journey we had the untiring and patient support from our family and friends.
 
-We would like to give a special thanks to Dr. Cristina Ribeiro da Fonseca and Dr. Clara Aleluia who have cooperated with us tirelessly, thus making a major contribution to the national research and development of innovation in Portuguese clinical Information Systems.
+We would like to give a special thanks to Doctor Clara Aleluia, Doctor Cristina Ribeiro da Fonseca and Doctor Jo\~{a}o Louren\c{c}o who have cooperated with us tirelessly, thus making a major contribution to the national research and development of innovation in Portuguese clinical Information Systems.
 
 We also want to thanks Bruno Cardoso, Rodrigo Louren\c{c}o, Bruno Oliveira, Tom\'{a}s Pinho, L\'{i}dia Freitas, Bruno Dias, Jo\~{a}o Miranda, Prof. Dr. Jacinto Nascimento, Prof. Dr. Daniel Gon\c{c}alves, Ana Beatriz Alves, Francisco Silveira, Joana Teixeira, Daniel Da Costa, Filipe Fernandes, In\^{e}s Fran\c{c}a Martins, Lu\'{i}s Ribeiro Gomes and Ricardo Cruz for helping, supporting and reviewing our work.
 
