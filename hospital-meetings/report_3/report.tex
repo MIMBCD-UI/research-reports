@@ -172,25 +172,39 @@ We usually met the users on their office since they have the material diagnostic
 
 \section{Learning Goals}
 
+A test result is reliable only if it has been performed with the right kind of users. In our case, small number of profiles may interact with the user interface: Radiologists, Gynecologists, etc... So we make sure to target the right persona and just focus on that profile of clinicians. If we do not follow this rule and ask a tester to play a role, we will only get hypothetical answers to hypothetical problems.
+
+A good preparation is essential to make the most out of the user tests. Testing just for the sake of testing is not enough, at best the researcher would give you a script with features list. Each time we prepare a new user test session, the researchers meet to define the learning goals, i.e. assumptions that need to be be verified or might be proven wrong. For instance, when we redesigned the user interface dedicated to a task, one assumption we had to test was that every essential information was easily accessible in the right menu against a right click option.
+
 The learning goals are:
 
-- Understand how to annotate breast mass on our prototype;
+\ding{226} Understand how to annotate breast mass on our prototype;
 
-- Understand how to annotate breast calcification on our prototype;
+\ding{226} Understand how to annotate breast calcification on our prototype;
 
-- Understand how to undo some annotation;
+\ding{226} Understand how to undo some annotation;
 
-- Understand how to redo some action on the prototype;
+\ding{226} Understand how to redo some action on the prototype;
 
-- Understand how to erase some annotation on the prototype;
+\ding{226} Understand how to erase some annotation on the prototype;
 
-\section{Phase Validation}
+We neither pretend to have found the ultimate recipe for user testing, nor to have invented it. We merely absorbed and digested many good practices found elsewhere and tried to summarize it into our own process. What worked for our research project might not work “as is” for others, but we hope it will help us get started with user tests or maybe serve as an inspiration for future work about learning goals.
 
-- What needs to be validate on this phase?
+\clearpage
 
-\section{Interviews vs Surveys}
+\section{Surveys vs Interviews (TODO: Re-write)}
 
-- Does it make sense to mix from Interviews and Surveys?
+One of the most important issues in the design of usable applications \cite{johnson2005user} is to learn about the people who will be using the application. This information is needed because different types of users require different types of interfaces \cite{nielsen1994usability}. Novice users, for example, will require frequent informative feedback as opposed to expert users who will require rapid response time and the availability of shortcuts \cite{shneiderman1987designing} and \cite{welch1998human}. A user analysis profiles the characteristics of the intended users of the system, such as age, education, skill level, cultural background, goals, computer literacy level, frequency of use, and familiarity with the domain. User capabilities can be determined through a survey/interview approach, direct interview, or direct observation \cite{strasberg1998moving}, \cite{hackos1997user} and \cite{shneiderman1987designing}. A major goal in the development of usable health care software should be to design a system that matches user’s capabilities.
+
+Environmental analysis specifies the conditions in which systems are used. Several aspects of the physical environment are significant to the design of the interface. The place and conditions in which the system is used can be a deciding determinant for the type of interaction the user has with the system and the user’s progress with the system \cite{bouwhuis2000parts}. Examining environmental issues such as space, lighting, noise, availability of resources, danger, speed, power sources, and social and cultural issues are an integral part of the environmental analysis \cite{hackos1997user}.
+
+The social environment of the users can impact the success or failure of a system. Social issues that need to be addressed as part of an environmental analysis are:
+
+(1) Do the users share information and work together;
+
+(2) Are resources readily available to assist the users \cite{hackos1997user}.
+
+Cultural issues are significant to consider and not only relate to ethnicity, but also to socioeconomic status, professional status, and regional differences. These differences can affect working routines, interactions with others, values, and biases \cite{hackos1997user}. Taking the characteristics of the users and the environment into account addresses only two points of the triad of good human–computer interaction design. The users’ tasks must also be considered using a technique called task analysis. We must also consider the users’ tasks by using a technique called task analysis.
 
 \section{Questions}
 
@@ -204,7 +218,9 @@ The following questions were made to the clinicians:
 
 \section{Tasks Analysis}
 
-Task Analysis is the name given in this report to any process that identifies and examines the tasks that must be performed by users when they interact with systems. It is a fundamental approach which assists in achieving higher safety, productivity and availability standards. This section describes the task analysis approach, and gathers together and comprehensively describes the application of some major task analysis techniques, organizing them into a practical scripts. The scripts are aimed at clinical practitioners such as Clinics, Radiologists, Doctors, etc., with or without previous task analysis experience, who have a need to establish task requirements or to carry out task assessments for one or more of the following topics:
+Task Analysis is the name given in this report to any process that identifies and examines the tasks that must be performed by users when they interact with systems. It is a fundamental approach which assists in achieving higher safety, productivity and availability standards.
+
+The section describes the task analysis approach, and gathers together and comprehensively describes the application of some major task analysis techniques, organizing them into a practical scripts. The scripts are aimed at clinical practitioners such as Clinics, Radiologists, Doctors, etc., with or without previous task analysis experience, who have a need to establish task requirements or to carry out task assessments for one or more of the following topics:
 
 \ding{226} Allocation of function (between human and machine);
 
@@ -217,6 +233,8 @@ Task Analysis is the name given in this report to any process that identifies an
 \ding{226} Performance checking;
 
 \ding{226} Problem searching;
+
+\clearpage
 
 Guidance is provided on which techniques to use to achieve human-system performance goals (e.g. efficient and effective allocation of function) in the most cost-effective manner. Application of this section will therefore assist organizations in choosing and applying the most appropriate technique(s) to meet their particular needs. Examples from some of these topic areas of when and where Task Analysis could usefully be applied are the following:
 
@@ -236,6 +254,8 @@ interface?
 \ding{226} How to detect false positives?
 
 This section to Task Analysis shows how and when various task analysis techniques can be used to address the above issues, and also gives practical insights into the use of these techniques. Additionally, it assists in planning task analysis applications during the life cycle of a system, at any stage from early design onwards, to achieve cost-effective results. Finally, a number of real case studies demonstrate how task analysis has actually been used in practice, and the impact that task analysis has had in these clinical applications.
+
+\clearpage
 
 \section{The Script}
 
@@ -299,6 +319,8 @@ In explaining the subject was somewhat reluctant to the fact that the project in
 \clearpage
 
 \section{Conclusions}
+
+This report demonstrates, through a research work, an user interface for develop and design participatory user tests for health care interfaces that incorporates well-documented user-centered design principles.  The methods we employed in our user interface show the benefits toward system usefulness, information quality, and interface quality. Health care is an intense information gathering activity and has a very complex organizational structure. Understanding the users, the environment, and their tasks is just the beginning when designing software or redesigning interfaces. Incorporating user-centered design principles throughout the design life cycle has the promise to assist in providing quality health care systems.
 
 \clearpage
 
