@@ -36,8 +36,8 @@ The following text can be used to motivate/introduce a final paper to write. So 
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.75\textwidth]{workflow}
-\caption{Workflow \cite{workflow}}
+\includegraphics[width=0.50\textwidth]{workflow}
+\caption{Dense Breast Workflow \cite{workflow} for C and D Standards}
 \label{fig:workflow}
 \end{figure}
 
@@ -57,122 +57,23 @@ The following text can be used to motivate/introduce a final paper to write. So 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Despite of not having a standard \textbf{MI} acquisition workflow we can informally map the information workflow of the \textbf{RR}. On Figure \ref{fig:rr_workflow} we cover the steps of the clinical workflow including treatment planning (\textit{Referring}), information control (\textit{Study Order}), stored data (\textit{Medical Imaging Studies} and \textit{Image Stored}), data retrieval (\textit{Retrieved Information}), image analysis (\textit{Modality Worklist}) and diagnosis (\textit{Report}).
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\hfill
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.75\textwidth]{rr_workflow}
+\caption{Radiology Room Workflow}
+\label{fig:rr_workflow}
+\end{figure}
 
+\hfill
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+To start the description of what we observed to be the information workflow of the \textbf{RR}, first of all, a \textit{Patient} is \textit{Referred} to a \textit{Hospital Information System (HIS)}. From this step, a \textit{Study Order} is created and received by a \textit{Radiology Information System (RIS)}. The \textit{RIS} can do two things: (1) it can receive the \textit{Modality Worklist} (e.g. \textit{MG}, \textit{US} or \textit{MRI}) and store it (\textit{Image Stored}) on the \textit{PACS}; and (2) it can access the \textit{Medical Imaging Studies}. From here, the \textit{HIS} can also retrieve  information (\textit{Retrieved Information}) from the \textit{PACS}. Finally, the \textit{Radiologist} do the respective \textit{Diagnosis} of the \textit{Patient} through a \textit{Diagnostic System} and \textit{Report} it to the \textit{PACS}.
 
-
-
-
-
-
-
-%During several early preliminary meetings, we enter into a quest to understand the fundamental building blocks of our research into the Human-Computer Interaction (HCI) applied to Health Informatics (HI). In our research developments, we are doing a User-Centered Design (UCD) to develop a Medical Imaging (MI) system that will support a breast cancer diagnosis in multimodality of view. During the past months, we grew several pilot versions of the system improving it. However, by trying to solve it, we encounter some high-level issues regarding the user interaction. Those issues were encountered during our user tests on the Radiology Room since we were doing experiments with Clinicians, or more precisely with Radiologists.
-%
-%In this report, we will address several of the debated issues that are potential contributions to the scientific community. Also, this report is a baseline work for the Research and Doctoral developments of the author. During the time we had aggregate a set of questions that seem to be an essential list of items to have in mind and to answer during the time. The issues are as follow on the next record.
-%
-%\hfill
-%
-%List of questions that seem to be important to answer over the time:
-%
-%\hfill
-%
-%\begin{enumerate}
-%\item What is already done between HCI and HI?
-%\item How can we improve our system?
-%\item Who can help us to achieve our goals?
-%\end{enumerate}
-%
-%\hfill
-%
-%Although these questions seem to be vague, the questions are serving us as a contextualisation between research field and project relative topics. Both Figure \ref{fig:plan_1_2} and Figure \ref{fig:plan_3_4} are representing our meeting debate regarding the next resurgence of system-related issues.
-%
-%The first issue we debate (Figure \ref{fig:plan_1_2}) was related to the need of having a full number of \textit{annotators}. One of the suggestions from Professor Nuno Nunes was the strategy of trying to find a way of bringing non-medical experts to label our medical images. With a higher crowdsourcing workflow, we can extract a higher number of annotations from medical images. However, since the users are not medical experts we need to find a credible way to solve the domain issue. For instance, Professor Nuno Nunes gave us the example \cite{cao2016estimating} of his research work answering a similar problem/solution.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%\hfill
-%
-%\begin{figure}[h]
-%\centering
-%\includegraphics[width=0.75\textwidth]{plan_1_2}
-%\caption{Plan 1}
-%\label{fig:plan_1_2}
-%\end{figure}
-%
-%\hfill
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%On the second issue (Figure \ref{fig:plan_1_2}), we discuss the opportunity of arguing our contribution as a multimodality related. The goal of this argument is to show, by giving evidence, that our multimodality of medical imaging is novel and bring to the healthcare systems a higher performance, as well as more accurate regarding the cancer diagnosis over medical imaging. For this issue we need to address and increase our network number of medical experts. At the moment we have between 8 to 12 medical experts, but we need at least 30 medical experts to cover our user tests.
-%
-%The next Figure \ref{fig:plan_3_4} covers what we debate regarding how to relate our novelties and compare the novel techniques (e.g. Figure \ref{fig:annotation_predictor_1}) with expected improvements by using new interaction techniques. The idea of Professor Nuno Nunes is to compare three different tasks with different interaction techniques each. The first one is the vanilla technique, where the user annotate the medical imaging with no system help. The second one is the technique the user receives recommendations for the next annotation point. Finally, the third one, the user press a region and the system automatically reproduce the annotation areas for that region. To test and validate this issue we need to measure performance and experience, comparing the three tasks and giving our conclusions.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%\hfill
-%
-%\begin{figure}[h]
-%\centering
-%\includegraphics[width=0.75\textwidth]{plan_3_4}
-%\caption{Plan 2}
-%\label{fig:plan_3_4}
-%\end{figure}
-%
-%\hfill
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%Last but not least, we debate a fourth issue (Figure \ref{fig:plan_3_4}) where it brings the first issue from Figure \ref{fig:plan_1_2}, where we bring together the idea of a crowdsourcing solution and test results of the novel interaction techniques with no medical experts. For this issue, it will be a more reliable test since we are testing again the methods where it reduces the need for experts. We are assuming here not being focused on labelling images, instead of it, we focus on improving interactions. Although we can also label images.
-%
-%Despite being a focus on high-level issues to solve in our system, we also have specific problems to solve. One of them is the problem of visualising stacks (Figure \ref{fig:rsvp_1}) of the \textbf{MRI} modality. When an image has a lesion, it is not easy to observe the wound and have a notion of the frames before and after the beginning and the end of that lesion. Therefore it is essential to give the user this notion of location. By studying a technique called \textit{RSVP}~\cite{brown2017role} we can address this issue more efficiently, while it is a potential and useful community contribution.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%\hfill
-%
-%\begin{figure}[h]
-%\centering
-%\includegraphics[width=0.75\textwidth]{rsvp_1}
-%\caption{RSVP}
-%\label{fig:rsvp_1}
-%\end{figure}
-%
-%\hfill
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%\hfill
-%
-%\begin{figure}[h]
-%\centering
-%\includegraphics[width=0.60\textwidth]{annotation_predictor_1}
-%\caption{Annotation Predictors Test}
-%\label{fig:annotation_predictor_1}
-%\end{figure}
-%
-%\hfill
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%Finally, we also address the predictors (Figure \ref{fig:annotation_predictor_1} and Figure \ref{fig:annotation_predictor_2}) issue. This issue is of chief interest since it has an immense contribution potential to the community. The idea of this solution is to simulate the presence of a recommendation system to recommend the next annotation point, simulating three different options. The simulation source come from an expert annotation on each image. We will compare three different images with three different difficulties. Than we show and simulate the system with other users.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%\hfill
-%
-%\begin{figure}[h]
-%\centering
-%\includegraphics[width=0.60\textwidth]{annotation_predictor_2}
-%\caption{Annotation Predictors Technique}
-%\label{fig:annotation_predictor_2}
-%\end{figure}
-%
-%\hfill
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
